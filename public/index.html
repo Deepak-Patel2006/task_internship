@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef2f7;
+padding:40px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button{
+padding:10px 20px;
+margin-top:10px;
+cursor:pointer;
+}
+
+.actions{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+.put{
+background:#fff;
+padding:15px;
+border-left:5px solid royalblue;
+margin-bottom:15px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.movie{
+background:#fff;
+padding:15px;
+border-left:5px solid royalblue;
+margin-bottom:15px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+</style>
+<div class="container">
+
+<h1>🎬 Movie Collection</h1>
+
+<a href="sign.html"><button> SIGNUP </button></a>
+<button id="logout">Log Out</button>
+
+<div class="card">
+<h2>Add Movie</h2>
+
+<input id="title" placeholder="Movie Title">
+<input id="director" placeholder="Director">
+<input id="year" placeholder="Release Year">
+<input id="rating" placeholder="Rating">
+<label>
+<input type="checkbox" id="watched">
+Watched
+</label>
+
+<button id="addMovie">Add Movie</button>
+
+</div>
+
+<div class="card">
+
+<h2>Movie ID</h2>
+
+<input id="movieId" placeholder="Movie Id">
+
+<button id="deleteMovie">Delete Movie</button>
+
+</div>
+
+<div class="card">
+
+<h2>Update Movie</h2>
+
+<input id="updateTitle" placeholder="New Title">
+<input id="updateDirector" placeholder="New Director">
+<input id="updateYear" placeholder="New Year">
+<input id="updateRating" placeholder="New Rating">
+
+<label>
+
+<input type="checkbox" id="updateWatched">
+
+Watched
+
+</label>
+
+<button id="updateMovie">
+
+Update Movie
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Search</h2>
+
+<input id="searchMovie" placeholder="Movie Name">
+
+<button id="searchBtn">
+
+Search
+
+</button>
+
+</div>
+
+<div class="actions">
+
+<button id="loadMovies">Load Movies</button>
+
+<button id="watchedMovies">Watched Movies</button>
+
+<button id="topRated">Top Rated</button>
+
+<button id="stats">Statistics</button>
+
+</div>
+
+<div id="put"></div>
+
+<div id="output"></div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
